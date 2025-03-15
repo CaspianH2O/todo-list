@@ -25,14 +25,57 @@
   padding: 20px;
 }
 
-.App-link {
-  color: #ffcc00; /* Brighter color for better visibility */
-  text-decoration: none;
-  transition: color 0.3s ease;
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+  transition: border-color 0.3s ease;
 }
 
-.App-link:hover {
-  color: #ff9900; /* Change color on hover */
+input[type="text"]:focus {
+  border-color: #ffcc00;
+  outline: none;
+}
+
+button {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:hover {
+  background-color: #3a3f47;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
 }
 
 @keyframes App-logo-spin {
